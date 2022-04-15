@@ -15,7 +15,7 @@ For the purposes of this project, the volume is cropped into the following forma
 
 ![cropped](https://user-images.githubusercontent.com/49917684/163586822-c75ed149-8535-4541-8842-7431141489d5.png)
 
-With the accompanying segmentation mask an image can look as follows:
+After scaling:
 
 ![mask](https://user-images.githubusercontent.com/49917684/163586922-d6d2fb9e-b437-41d9-9246-fb382ac7f9d8.png)
 
