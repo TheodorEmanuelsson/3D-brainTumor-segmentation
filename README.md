@@ -22,7 +22,7 @@ After scaling:
 
 ## Training
 
-Training a simple [Unet](https://arxiv.org/pdf/1505.04597.pdf) model adapted to the 3D setting, consisting of 5,645,828 parameters.
+Training a simple [Unet](https://arxiv.org/pdf/1505.04597.pdf) model adapted to the 3D setting, consisting of 5,645,828 parameters and is trained for 100 epochs.
 
 ![trainloss](https://user-images.githubusercontent.com/49917684/163587252-8238d776-ede4-4523-8d63-4258d642168f.png)
 
