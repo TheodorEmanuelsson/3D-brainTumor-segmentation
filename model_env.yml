@@ -11,8 +11,8 @@ dependencies:
   - jupyterlab=2.2.6
   - jupyterlab_server=1.2.0
   - nodejs=10.13
-  - tensorflow-gpu=2
   - scikit-learn
+  - tensorflow-gpu=2
   - graphviz
   - pydot
   - pandas
