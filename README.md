@@ -30,7 +30,7 @@ Training a simple [Unet](https://arxiv.org/pdf/1505.04597.pdf) model adapted to 
 
 ## Performance
 
-For a batch of 4 training volumes, the model achieves a mean IoU of 0.82.
+For a batch of 4 training volumes, the model achieves a mean IoU of 0.82 and fairly good segmentation results.
 
 Prediction results:
 ![download](https://user-images.githubusercontent.com/49917684/163587347-65c2aaf7-b64f-4e61-a64e-c230e470dae7.png)
