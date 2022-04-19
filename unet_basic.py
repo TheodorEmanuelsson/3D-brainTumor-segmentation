@@ -73,12 +73,5 @@ def simple_unet_model(IMG_HEIGHT, IMG_WIDTH, IMG_DEPTH, IMG_CHANNELS, num_classe
     outputs = Conv3D(num_classes, (1, 1, 1), activation='softmax')(c9)
      
     model = Model(inputs=[inputs], outputs=[outputs])
-    #compile model outside of this function to make it flexible. 
-    #model.summary()
     
     return model
-
-#Test if everything is working ok. 
-model = simple_unet_model(128, 128, 128, 3, 4)
-print(model.input_shape)
-print(model.output_shape)
