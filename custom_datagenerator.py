@@ -2,8 +2,6 @@
 Custom data generator to work with BraTS2020 dataset.
 No image processing operations are performed here, just load data from local directory
 in batches. 
-
-See https://github.com/bnsreenu/python_for_microscopists/blob/master/231_234_BraTa2020_Unet_segmentation/233_custom_datagen.py
 """
 
 #from tifffile import imsave, imread
