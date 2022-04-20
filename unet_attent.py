@@ -1,5 +1,5 @@
 # 3D Unet imported from:
-# Slightly adapted
+# Adapted to attention block
 """
 @author: Sreenivas Bhattiprolu
 Converted my standard 2D Unet to 3D. 
@@ -172,7 +172,7 @@ def expend_as(tensor, rep):
     # Anonymous lambda function to expand the specified axis by a factor of argument, rep.
     # If tensor has shape (512,512,N), lambda will return a tensor of shape (512,512,N*rep), if specified axis=2
 
-    my_repeat = Lambda(lambda x, repnum: repeat_elements(x, repnum, axis=4),
+    my_repeat = Lambda(lambda x, repnum: tensorflow.keras.backend.repeat_elements(x, repnum, axis=4),
                        arguments={'repnum': rep})(tensor)
     return my_repeat    
     
