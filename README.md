@@ -24,17 +24,25 @@ After scaling:
 
 Training a simple [Unet](https://arxiv.org/pdf/1505.04597.pdf) model adapted to the 3D setting, consisting of 5,645,828 parameters and is trained for 100 epochs.
 
-![trainloss](https://user-images.githubusercontent.com/49917684/163587252-8238d776-ede4-4523-8d63-4258d642168f.png)
+![trainlossV1](https://user-images.githubusercontent.com/49917684/164469594-be17aa6f-b768-4115-ba69-104d800a9011.png)
 
-![trainaccuracy](https://user-images.githubusercontent.com/49917684/163587263-ec749396-e3f7-406d-939c-a6d88664c679.png)
+![trainaccV1](https://user-images.githubusercontent.com/49917684/164469627-18d9a062-d8c3-4184-b97a-147dd6a3f6b4.png)
+
+
+A 3D Unet with attention blocks is also trained for 100 epochs.
+
+![trainlossAtt](https://user-images.githubusercontent.com/49917684/164469673-48c9908e-9ed8-4934-b6ee-e9910a914729.png)
+
+![trainaccAtt](https://user-images.githubusercontent.com/49917684/164469710-6e1ab798-e143-4a06-ad80-518e067449b8.png)
+
 
 ## Performance
 
-For a batch of 4 training volumes, the model achieves a mean IoU of 0.82 and fairly good segmentation results.
+Comparing the mean IoU on the test data for the two models. It seems that the attention model is slightly better compared to the base model.
 
-Prediction results:
-![download](https://user-images.githubusercontent.com/49917684/163587347-65c2aaf7-b64f-4e61-a64e-c230e470dae7.png)
+Basic 3D Unet: 0.7957
+Attention 3D Unet: 0.8339
 
-
+![pred](https://user-images.githubusercontent.com/49917684/164469966-f9e27ccc-7fce-4f08-b134-6269ff6ea4df.png)
 
 
