@@ -11,6 +11,7 @@ from tensorflow.keras.optimizers import Adam
 from tensorflow.keras.metrics import MeanIoU
 from tensorflow.keras.backend import int_shape, repeat_elements
 import tensorflow as tf
+import tensorflow.keras.backend as K
 
 kernel_initializer =  'he_uniform' #Try others if you want
 
@@ -172,7 +173,7 @@ def expend_as(tensor, rep):
     # Anonymous lambda function to expand the specified axis by a factor of argument, rep.
     # If tensor has shape (512,512,N), lambda will return a tensor of shape (512,512,N*rep), if specified axis=2
 
-    my_repeat = Lambda(lambda x, repnum: tensorflow.keras.backend.repeat_elements(x, repnum, axis=4),
+    my_repeat = Lambda(lambda x, repnum: tf.keras.backend.repeat_elements(x, repnum, axis=4),
                        arguments={'repnum': rep})(tensor)
     return my_repeat    
     
